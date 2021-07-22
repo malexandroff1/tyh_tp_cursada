@@ -35,5 +35,4 @@ test("Should either add or remove variants", () => {
     campera.addVariant(camperaDeCueroRoja)
     expect(campera.getVariants().length).toBe(2)
     expect(campera.getVariants()).toEqual([camperaDeCueroNegra, camperaDeCueroRoja])
-
 })

@@ -25,8 +25,8 @@ class Variant{
             throw("Cannot decrease stock");
         this.stock = this.stock - quantity;
     }
-    hasStock(){
-        return this.stock > 0;
+    hasStock(quantity=0){
+        return (this.stock - quantity) > 0;
     }
 }
 
