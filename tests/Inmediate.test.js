@@ -4,7 +4,7 @@ let Inmediate = require("../models/Inmediate");
 let shipping, saleDate;
 
 beforeEach(() => {
-    saleDate = new Date(2021, 7, 22)
+    saleDate = new Date(2021, 7, 22);
     shipping = new Inmediate(saleDate);
 })
 

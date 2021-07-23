@@ -1,10 +1,10 @@
-let Shipping = require("../models/Shipping");
+let Shipping = require("./Shipping");
 
 class Traditional extends Shipping{
-    constructor(deliveryDate) {
+    constructor(saleDate) {
         super();
         this.cost = 450;
-        this.deliveryDate = deliveryDate.setDate(4);
+        this.deliveryDate = saleDate.setDate(4);
     }
     getShippingCost() {
         return this.cost;

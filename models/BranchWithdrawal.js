@@ -1,10 +1,10 @@
-let Shipping = require("../models/Shipping");
+let Shipping = require("./Shipping");
 
 class BranchWithdrawal extends Shipping{
-    constructor(deliveryDate) {
+    constructor(saleDate) {
         super();
         this.cost = 0;
-        this.deliveryDate = deliveryDate;
+        this.deliveryDate = null;
     }
     getShippingCost() {
         return this.cost;

@@ -1,10 +1,10 @@
-let Shipping = require("../models/Shipping");
+let Shipping = require("./Shipping");
 
 class Inmediate extends Shipping{
-    constructor(deliveryDate) {
+    constructor(saleDate) {
         super();
         this.cost = 700;
-        this.deliveryDate = deliveryDate.setDate(1);
+        this.deliveryDate = saleDate.setDate(1);
     }
     getShippingCost() {
         return this.cost;

@@ -9,5 +9,5 @@ beforeEach(() => {
 
 test("Should return constructor parameters", () => {
     expect(shipping.getShippingCost()).toBe(0);
-    expect(shipping.getDeliveryDate()).toBeUndefined();
+    expect(shipping.getDeliveryDate()).toBeNull();
 })
